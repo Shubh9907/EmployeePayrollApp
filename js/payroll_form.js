@@ -1,3 +1,6 @@
+/**
+ * Event Listner for name input
+ */
 const text = document.querySelector('#name');
 const textError = document.querySelector('.text-error');
 text.addEventListener('input', function() {
