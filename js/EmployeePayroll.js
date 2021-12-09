@@ -1,3 +1,6 @@
+/**
+ * Class contains getters and setters
+ */
 class EmployeePayrollData {
 
     get id () {return this._id;}
