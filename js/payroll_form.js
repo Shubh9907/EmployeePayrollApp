@@ -30,10 +30,23 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 const save = () => {
     try {
-        let EmployeePayrollData = createEmployeePayroll();
+        let employeePayrollData = createEmployeePayroll();
+        createAndUpdateStorage(employeePayrollData);
     } catch (e) {
         return;
     }
+}
+
+function createAndUpdateStorage(employeePayrollData) {
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
+
+    if (employeePayrollList != undefined) {
+        employeePayrollList.push(EmployeePayrollData);
+    } else {
+        employeePayrollList = [EmployeePayrollData];
+    }
+    alert(employeePayrollList.toString);
+    localStorage.selItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
 }
 
 const createEmployeePayroll = () => {
