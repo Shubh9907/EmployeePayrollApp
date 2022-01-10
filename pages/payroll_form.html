@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/payroll_form.css">
     <title>Employee Payroll Form</title>
-    <script defer src="../js/payroll_form.js"></script>
 </head>
 <body>
     <header class="header-content header"> <!--Header Element-->
@@ -19,35 +18,35 @@
         </div>
     </header>
     <div id="formId" class="form-content">
-        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+        <form class="form" action="payroll_home.html" onsubmit="save()" onreset="resetForm()">
             <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name"
                             placeholder="Enter Name.." required>
-                <error-output class="text-error" for = "text"></error-output> 
+                <error-output class="text-error" for ="text"></error-output> 
             </div>
             <div class="row-content">
                 <label class="label text" for="profile">Profile Image</label>
                 <div class="profile-radio-content">
                     <label>
                         <input type="radio" id="profile1" name="profile"
-                            value="../assets/profile-images/Ellips -3.png" required>
+                            value="../assets/profile-images/Ellipse -3.png" required>
                         <img class="profile" id="image1" src="../assets/profile-images/Ellipse -3.png">
                     </label>
                     <label>
                         <input type="radio" id="profile2" name="profile"
-                            value="../assets/profile-images/Ellips 1.png" required>
+                            value="../assets/profile-images/Ellipse 1.png" required>
                         <img class="profile" id="image2" src="../assets/profile-images/Ellipse 1.png">
                     </label>
                     <label>
                         <input type="radio" id="profile3" name="profile"
-                            value="../assets/profile-images/Ellips -8.png" required>
+                            value="../assets/profile-images/Ellipse -8.png" required>
                          <img class="profile" id="image3" src="../assets/profile-images/Ellipse -8.png">
                     </label>
                     <label>
                         <input type="radio" id="profile4" name="profile"
-                            value="../assets/profile-images/Ellips -7.png" required>
+                            value="../assets/profile-images/Ellipse -7.png" required>
                         <img class="profile" id="image4" src="../assets/profile-images/Ellipse -7.png">
                     </label>
                 </div>
@@ -64,15 +63,15 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="hr">
+                    <input class="checkbox" type="checkbox" id="hr" name="department" value="hr">
                     <label class="text" for="hr">HR</label>
-                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="sales">
+                    <input class="checkbox" type="checkbox" id="sales" name="department" value="sales">
                     <label class="text" for="sales">Sal</label>
-                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="finance">
+                    <input class="checkbox" type="checkbox" id="finance" name="department" value="finance">
                     <label class="text" for="finance">Finance</label>
-                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="engineer">
+                    <input class="checkbox" type="checkbox" id="engineer" name="department" value="engineer">
                     <label class="text" for="engineer">Engineer</label>
-                    <input class="checkbox" type="checkbox" id="others" name="others" value="others">
+                    <input class="checkbox" type="checkbox" id="others" name="department" value="others">
                     <label class="text" for="others">Others</label>
                 </div>
             </div>
@@ -146,7 +145,7 @@
                 <textarea class="input" name="Notes" id="notes" placeholder="" style="height:100px"></textarea>
             </div>
             <div class="button-content">
-                <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="../pages/payroll_home.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button class="button submitButton" type="submit" id="submitButton">Submit</button>
                     <button class="button resetButton" type="reset" id="resetButton">Reset</button>
@@ -154,5 +153,11 @@
             </div>
         </form>
     </div>
+    <script defer src="../js/payroll_form.js"></script>
+    <script defer src="../js/EmployeePayroll.js"></script>
+    <script defer src="../js/utility.js"></script>
+    <script defer src="../js/site_properties.js"></script>
+    <script defer src="../js/payroll_home.js"></script>
+    <script defer src="../js/http_services.js"></script>
 </body>
 </html>

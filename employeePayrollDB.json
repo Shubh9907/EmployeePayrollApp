@@ -1,0 +1,40 @@
+{
+  "EmployeePayrollDB": [
+    {
+      "_name": "Sachin Prajapati",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png",
+      "_gender": "male",
+      "_department": [
+        "engineer"
+      ],
+      "_salary": "476168",
+      "_notes": "hello",
+      "_startDate": "17 June 2019",
+      "id": "adlQyv-"
+    },
+    {
+      "_name": "Basila Naushad",
+      "_profilePic": "../assets/profile-images/Ellipse -7.png",
+      "_gender": "female",
+      "_department": [
+        "engineer"
+      ],
+      "_salary": "442688",
+      "_notes": "new employee",
+      "_startDate": "20 March 2019",
+      "id": "vpQKDge"
+    },
+    {
+      "_name": "Shubham Verma",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png",
+      "_gender": "male",
+      "_department": [
+        "engineer"
+      ],
+      "_salary": "500000",
+      "_notes": "hello",
+      "_startDate": "5 Oct 2020",
+      "id": "wxRgGCb"
+    }
+  ]
+}
